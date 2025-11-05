@@ -1,0 +1,9 @@
+# Ignore node modules everywhere
+Frontend/node_modules/
+Backend/node_modules/
+
+# Optional - ignore environment or build files
+**/dist/
+**/.env
+Frontend/node_modules/ 
+Backend/node_modules/ 
