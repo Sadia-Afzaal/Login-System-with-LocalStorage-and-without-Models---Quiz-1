@@ -1,0 +1,26 @@
+/* File: utils/regEmailTest.js */
+
+/**
+ * Validates whether input is a properly formatted email address.
+ * Enforces a maximum length of 250 characters.
+ *
+ * @param {any} data - User-provided email input.
+ * @returns {number} - 1 if valid email, 0 if invalid.
+ */
+const regEmailTest = (data) => {
+  if (typeof data !== "string") return 0;
+
+  const email = data.trim().toLowerCase();
+
+  if (email.length === 0 || email.length > 250) {
+    return 0;
+  }
+
+  const emailPattern =
+    /^[a-zA-Z0-9](?:[a-zA-Z0-9._%+-]{0,63}[a-zA-Z0-9])?@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[A-Za-z]{2,}$/i;
+
+  return emailPattern.test(email) ? 1 : 0;
+};
+
+// ✅ Export (direct function export)
+module.exports = regEmailTest;

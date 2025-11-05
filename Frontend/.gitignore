@@ -1,0 +1,12 @@
+# Ignore node modules
+Frontend/node_modules/
+Backend/node_modules/
+
+# Ignore build/dist files
+Frontend/dist/
+
+# Ignore environment files
+*.env
+
+# Misc
+.DS_Store
