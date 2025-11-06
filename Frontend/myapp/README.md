@@ -1,16 +1,45 @@
-# React + Vite
+# ReactWordPress
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ReactWordPress** is a modern frontend design built using **React** and **Vite** for a **Tech Blog Company**.  
+This project focuses on the **UI design only**, providing responsive layouts and visually appealing pages for a technology-focused blog website.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Responsive and modern user interface  
+- Multiple pages (Home, About, Services, Portfolio, Login, Register, Dashboard, Contact, Footer)  
+- Built with React and Vite for fast development  
+- Organized and reusable component structure  
+- Ready for future integration with WordPress or any CMS
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Installation
 
-## Expanding the ESLint configuration
+```bash
+# Clone the repository
+git clone https://github.com/Sadia-Afzaal/FrontEnd-React-Assignment-001.git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Navigate into the project folder
+cd myapp
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+Open http://localhost:5173 in your browser to view the project.
+
+Build for Production:
+bash
+npm run build
+
+Preview the production build:
+bash
+npm run preview
+
+Technologies Used:
+React
+Vite
+HTML5 / CSS3
+JavaScript (ES6+)

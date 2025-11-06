@@ -165,8 +165,10 @@ const savingData = async(regEmail, regName, password)=>{
     {errorOverallState && (
       <p style={{color: "red"}}>{errorOverallState}</p>
     )}
-    <h1>Register</h1>
-    <form onSubmit={handleForm}>
+    <h1 className="register-box-heading">Register</h1>
+    <div className="register-container">
+  <div className="register-box">
+    <form onSubmit={handleForm} >
  
       <label htmlFor="name">Name</label><br />
       {errornameFieldState && (
@@ -195,6 +197,8 @@ const savingData = async(regEmail, regName, password)=>{
  
       <button type="submit">Submit</button>
     </form>
+  </div>
+  </div>
   </div>
 }
 export default Register;

@@ -97,7 +97,8 @@ function Login() {
   };
 
   return (
-    <div>
+    <div className="login-container">
+  <div className="login-box">
       {errorOverallState && (
         <p style={{color: "red"}}>{errorOverallState}</p>
       )}
@@ -135,10 +136,12 @@ function Login() {
         <button type="submit">Login</button>
       </form>
       
-      <p>
+      <p className="register-link">
         Don't have an account? <a href="/register">Register here</a>
       </p>
     </div>
+    </div>
+     
   );
 }
 

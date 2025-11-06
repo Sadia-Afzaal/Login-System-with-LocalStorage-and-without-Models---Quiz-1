@@ -723,22 +723,22 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 
 }
-/*------------------------------Register-------------------------------------*/
+/* ------------------------------Register-------------------------------------*/
 /* Full page container */
-.register-container {
+/*.register-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f0f2f5; /* clean, professional background */
+  background-color: #f0f2f5;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Registration box */
+
 .register-box {
   display: flex;
-  flex-direction: column; /* vertical stack */
-  align-items: center;    /* horizontal center */
+  flex-direction: column; 
+  align-items: center;    
   width: 400px;
   padding: 50px 40px;
   background-color: #fff;
@@ -746,7 +746,6 @@
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
-/* Heading */
 .register-box h2 {
   font-size: 28px;
   font-weight: 600;
@@ -754,7 +753,7 @@
   color: #333;
 }
 
-/* Inputs stacked vertically */
+
 .register-box input {
   width: 100%;
   padding: 14px 16px;
@@ -771,7 +770,7 @@
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
 }
 
-/* Button */
+
 .register-box button {
   width: 100%;
   padding: 14px 16px;
@@ -789,7 +788,231 @@
   background-color: #0056b3;
 }
 
-/* Optional: placeholder color */
+
 .register-box input::placeholder {
   color: #aaa;
+}
+*/
+/* Global page style */
+/* Wrapper fills the whole viewport */
+
+/* Container to center the form */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  background-color: #f4f6f8;
+}
+
+/* Form styling */
+.register-box-heading{
+  text-align: center; /* horizontally center */
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+.register-box {
+  width: 420px;
+  padding: 50px 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Heading */
+.register-box h1 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+/* Labels */
+.register-box label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #34495e;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Inputs */
+.register-box input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.register-box input:focus {
+  border-color: #4e73df;
+  box-shadow: 0 0 8px rgba(78, 115, 223, 0.2);
+}
+
+.register-box input::placeholder {
+  color: #b0b0b0;
+}
+
+/* Error messages */
+.register-box p {
+  color: #e74a3b;
+  font-size: 13px;
+  margin: -10px 0 10px;
+}
+
+/* Button */
+.register-box button {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4e73df, #2e59d9);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.register-box button:hover {
+  background: linear-gradient(135deg, #2e59d9, #224abe);
+  transform: translateY(-2px);
+}
+
+/* Overall error message */
+.overall-error {
+  color: #e74a3b;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .register-box {
+    width: 90%;
+    padding: 40px 25px;
+  }
+
+  .register-box h1 {
+    font-size: 24px;
+  }
+}
+/* ---------------- Login Form Styling ---------------- */
+
+/* Container to center the form vertically and horizontally */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* full viewport height */
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form box */
+.login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding: 50px 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+.login-box h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Labels */
+.login-box label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+/* Input fields */
+.login-box input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.login-box input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Error messages */
+.login-box p {
+  color: red;
+  font-size: 14px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+
+/* Submit button */
+.login-box button {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #0056b3;
+}
+
+/* Bottom text */
+.login-box p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-box p a:hover {
+  text-decoration: underline;
+}
+/* Space below the button for the register link */
+.login-box .register-link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-box .register-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-box .register-link a:hover {
+  text-decoration: underline;
 }
